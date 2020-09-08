@@ -5,6 +5,10 @@ local StandUser = User:FindFirstChild("Stand");
 local CharacterRootPart = User.HumanoidRootPart;
 local rs = game.ReplicatedStorage;
 
+if User:FindFirstChild("holamigo") then 
+        User.holamigo:Remove()
+end
+
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://507184537"
 sound.Volume = 0.5
@@ -12,7 +16,8 @@ sound.Name = "holamigo"
 sound.Parent = User
 
 local playing111 = User.holamigo
-        workspace.CurrentCamera.FieldOfView = 70;
+ 
+workspace.CurrentCamera.FieldOfView = 70;
 
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
